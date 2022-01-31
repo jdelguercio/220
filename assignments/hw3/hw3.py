@@ -1,22 +1,32 @@
 """
-Name: <your name goes here – first and last>
+Name: <Joey Del Guercio>
 <ProgramName>.py
 
-Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
+Problem:<basic functions using loops, math, and input>
 
 Certification of Authenticity:
-<include one of the following>
 I certify that this assignment is entirely my own work.
-I certify that this assignment is my own work, but I discussed it with: <Name(s)>
+
+
 """
 
-
 def average():
-    pass
+    n_grades = eval(input('How many grades would you like to input?'))
+    numerator = 0
+    for _ in range(1,n_grades + 1):
+        grade = eval(input('Enter your grade.'))
+        numerator += grade
+    the_avg = numerator / n_grades
+    print('Your average is: ', the_avg)
+
 
 
 def tip_jar():
-    pass
+    tips = 0
+    for _ in range (1,6):
+        tips += eval(input('What are your tips?'))
+    print('total tips: ', tips)
+
 
 
 def newton():
