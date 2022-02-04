@@ -30,15 +30,33 @@ def tip_jar():
 
 
 def newton():
-    pass
+    num = eval(input('What number do you want to square root? '))
+    times = eval(input('How many times should we improve the approximation? '))
+    approx = num
+    for _ in range(1, times+1):
+        approx = (approx + (num / approx)) / 2
+    print(approx)
 
 
-def sequence():
-    pass
+def sequence(): #incomplete
+    terms = eval(input('how many terms would you like? '))
+    num = -2
+    denom = -1
+    for i in range(terms):
+        num += 5
+        denom += 3
+        print(num % denom, end=' ')
+        num += 2
+        denom += 2
+# this question is sooooooooo hard
 
 
-def pi():
-    pass
+
+
+def pi(): #incomplete
+    n = eval(input('how many terms?'))
+    pi_sum = 0
+
 
 
 if __name__ == '__main__':
