@@ -38,24 +38,22 @@ def newton():
     print(approx)
 
 
-def sequence(): #incomplete
+def sequence():
     terms = eval(input('how many terms would you like? '))
-    num = -2
-    denom = -1
-    for i in range(terms):
-        num += 5
-        denom += 3
-        print(num % denom, end=' ')
-        num += 2
-        denom += 2
-# this question is sooooooooo hard
+    for i in range(1, terms+1):
+        output = (i - 1) + (i % 2)
+        print(output, end=' ')
 
 
-
-
-def pi(): #incomplete
+def pi():
     n = eval(input('how many terms?'))
-    pi_sum = 0
+    pi_sum = 1
+    for i in range(n):
+        num = i + (2 - (i % 2))
+        denom = i + (1 + (i % 2))
+        pi_sum *= (num / denom)
+    approx = pi_sum * 2
+    print(approx)
 
 
 
