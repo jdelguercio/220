@@ -42,4 +42,3 @@ def greetingcard():
     win.getMouse()
     win.close()
 
-    input()
